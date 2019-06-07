@@ -1,0 +1,150 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+}
+
+body #bg {
+  background-color: #005DFF;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  -webkit-clip-path: polygon(100% 0, 100% 75%, 45% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 75%, 45% 100%, 0 100%, 0 0);
+}
+
+@media (min-width: 52.5em) {
+  body #bg {
+    -webkit-clip-path: polygon(0 0, 77% 0, 60% 100%, 0% 100%);
+    clip-path: polygon(0 0, 77% 0, 60% 100%, 0% 100%);
+  }
+}
+
+body header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 0.95em;
+}
+
+body main {
+  font-size: 0.85em;
+}
+
+@media (min-width: 52.5em) {
+  body main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "primary card";
+  }
+}
+
+body main section#card {
+  font-size: 0.85em;
+  background: #fff;
+  padding: 0.95em;
+  margin: 1em auto;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 10px 30px black;
+          box-shadow: 0 10px 30px black;
+  width: 80%;
+}
+
+@media (min-width: 52.5em) {
+  body main section#card {
+    grid-area: card;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 1em;
+  }
+}
+
+body main section#card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body main section#card ul li {
+  margin-bottom: 0.63em;
+}
+
+body main section#card ul li span {
+  position: absolute;
+  width: 1.88em;
+  height: 1.88em;
+  background-color: #ccdfff;
+  border-radius: 50%;
+  margin-right: 0.25em;
+  margin-top: 5px;
+}
+
+body main section#card ul li strong {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+body main section#primary {
+  color: #fff;
+  padding: 0.95em;
+  text-align: center;
+}
+
+@media (min-width: 52.5em) {
+  body main section#primary {
+    grid-area: primary;
+    text-align: left;
+    margin: 4em 0 0 4em;
+  }
+}
+
+body main section#primary h1 {
+  font-size: 2.3em;
+  margin-top: 0.63em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 52.5em) {
+  body main section#primary h1 {
+    width: 30%;
+    font-size: 3em;
+    line-height: 0.95em;
+  }
+}
+
+body main section#primary p {
+  font-size: 1.2em;
+}
+
+body main section#primary a {
+  color: #001333;
+  border-radius: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #FFF6BB;
+  display: block;
+  text-align: center;
+  margin: 2.0em auto 0 auto;
+  padding: 0.95em;
+}
+
+@media (min-width: 52.5em) {
+  body main section#primary a {
+    display: inline-block;
+    padding: 0.95em 3.8em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
